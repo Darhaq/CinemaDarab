@@ -1,1 +1,10 @@
 <p>crud works!</p>
+
+<div>
+    <h2>CRUD Operations</h2>
+    <p>Names: {{ names }}</p>
+    <button (click)="create('NewName')">Create</button>
+    <button (click)="delete()">Delete</button>
+    <button (click)="getAll()">Get All</button>
+    <button (click)="update('UpdatedName')">Update</button>
+  </div>

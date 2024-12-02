@@ -34,4 +34,14 @@ export class CrudComponent {
       console.log("Getting all names:", this.names);
       return this.names;
     }
-}
+
+    update(newName: string): void {
+      if (this.names.length > 0) {
+        const oldName = this.names[0];
+        this.names[0] = newName;
+        console.log(`${oldName} updated to ${newName}.`, this.names);
+      } else {
+        console.log("No names to update.");
+      }
+    }
+  }
